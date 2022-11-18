@@ -24,8 +24,18 @@
  //console.log(Car);
 
 // array
-let person = ['Name', 'Age', 'Contact', 'Address' ];
-person[4] = 'CNIC';
-console.log(person);
+//let person = ['Name', 'Age', 'Contact', 'Address' ];
+//person[4] = 'CNIC';
+//console.log(person);
 
+//function
 
+function greet(name) {
+    console.log('Hasnain' + ' ' + name);
+}
+greet('Rao');
+// calculation
+function multiple(num) {
+    return num * num;
+}
+console.log(multiple(3));
