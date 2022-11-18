@@ -10,15 +10,22 @@
 //console.log(price);
 
 // Object
-let Car = {
-    Company: 'Honda',
-        Colour: 'Red',
-    Model: '2022'
-}
+//let Car = {
+    //Company: 'Honda',
+    //    Colour: 'Red',
+    //Model: '2022'
+//}
 // dot notation
-Car.Company = 'audi';
+ //Car.Company = 'audi';
 // bracket notation 
-let select = 'Model';
-Car[select] = 2023;
+ //let select = 'Model';
+ //Car[select] = 2023;
 // 
-console.log(Car);
+ //console.log(Car);
+
+// array
+let person = ['Name', 'Age', 'Contact', 'Address' ];
+person[4] = 'CNIC';
+console.log(person);
+
+
