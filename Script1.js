@@ -144,22 +144,42 @@
 
 //Loops
 // for loop
-for( let i = 0; i<5; i++)
+// for( let i = 0; i<5; i++)
+// {
+//     console.log(i);
+// }
+// //while loop
+// let i =0;
+// while (i<5)
+// {
+//     console.log(i);
+//     i++;
+// }
+// //do-while loop
+// let x = 0;
+// do
+// {
+//     console.log(x);
+//     x++;
+// }
+// while(x<5);
+
+//For-In Loop
+let Car={
+    Colour:'red',
+    Model: '2022',
+    Brand: 'Mazda'
+} 
+for ( let key in Car)
 {
-    console.log(i);
+    console.log(key,Car[key]);
 }
-//while loop
-let i =0;
-while (i<5)
+
+// For-In Loop With Array
+
+let Colour=['Red','Blue','Green'];
+for(let index in Colour)
 {
-    console.log(i);
-    i++;
+    console.log(index,Colour[index]);
 }
-//do-while loop
-let x = 0;
-do
-{
-    console.log(x);
-    x++;
-}
-while(x<5)
+
