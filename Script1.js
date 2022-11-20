@@ -105,40 +105,61 @@
 // 6am to 12pm "Good Morning"
 // 12pm to 6pm "Good Afternoon"
 // otherwise "Good Evening"
-  let hours = 19;
-  if (hours >=6 && hours < 12 ){
-    console.log("Good Morning");
- }
- else if(hours >=12 && hours < 18 )
- console.log("Good Afternoon");
- else 
- console.log("Good Evening");
+//   let hours = 19;
+//   if (hours >=6 && hours < 12 ){
+//     console.log("Good Morning");
+//  }
+//  else if(hours >=12 && hours < 18 )
+//  console.log("Good Afternoon");
+//  else 
+//  console.log("Good Evening");
 
-// Switch Statment
-let day = '8';
-switch (day){
-    case('1'):
-    console.log("Monday");
-    break;
-    case('2'):
-    console.log("Tuesday");
-    break;
-    case('3'):
-    console.log("Wednesday");
-    break;
-    case('4'):
-    console.log("Thursday");
-    break;
-    case('5'):
-    console.log("Friday");
-    break;
-    case('6'):
-    console.log("Saturday");
-    break;
-    case('7'):
-    console.log("Sunady");
-    break;
-    default:
-    console.log("Invalid");
+// // Switch Statment
+// let day = '8';
+// switch (day){
+//     case('1'):
+//     console.log("Monday");
+//     break;
+//     case('2'):
+//     console.log("Tuesday");
+//     break;
+//     case('3'):
+//     console.log("Wednesday");
+//     break;
+//     case('4'):
+//     console.log("Thursday");
+//     break;
+//     case('5'):
+//     console.log("Friday");
+//     break;
+//     case('6'):
+//     console.log("Saturday");
+//     break;
+//     case('7'):
+//     console.log("Sunady");
+//     break;
+//     default:
+//     console.log("Invalid");
+// }
+
+//Loops
+// for loop
+for( let i = 0; i<5; i++)
+{
+    console.log(i);
 }
- 
+//while loop
+let i =0;
+while (i<5)
+{
+    console.log(i);
+    i++;
+}
+//do-while loop
+let x = 0;
+do
+{
+    console.log(x);
+    x++;
+}
+while(x<5)
