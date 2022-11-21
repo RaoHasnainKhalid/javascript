@@ -222,8 +222,34 @@
 // console.log(b);
 
 //Max Number
-let fun = max (5,7)
-console.log(fun);
-function max(a,b){
-    return (a>b) ? a : b;
+// let fun = max (5,7)
+// console.log(fun);
+// function max(a,b){
+//     return (a>b) ? a : b;
+// }
+
+//Fizz Buzz
+
+let x = FB(15);
+console.log(x);
+function FB(input)
+{
+    if(typeof input!=='number')
+    { 
+        return NaN;
+    }
+    if(input%3 === 0 && input%5 === 0)
+    {
+        return "FizzBuzz";
+    }
+    if(input%3 === 0 )
+    {
+        return "Fizz";
+    }
+    if(input%5 === 0)
+    {
+        return "Buzz";
+    }
+    return input;
+
 }
