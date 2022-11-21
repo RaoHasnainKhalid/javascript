@@ -230,26 +230,51 @@
 
 //Fizz Buzz
 
-let x = FB(15);
-console.log(x);
-function FB(input)
-{
-    if(typeof input!=='number')
-    { 
-        return NaN;
-    }
-    if(input%3 === 0 && input%5 === 0)
-    {
-        return "FizzBuzz";
-    }
-    if(input%3 === 0 )
-    {
-        return "Fizz";
-    }
-    if(input%5 === 0)
-    {
-        return "Buzz";
-    }
-    return input;
+// let x = FB(15);
+// console.log(x);
+// function FB(input)
+// {
+//     if(typeof input!=='number')
+//     { 
+//         return NaN;
+//     }
+//     if(input%3 === 0 && input%5 === 0)
+//     {
+//         return "FizzBuzz";
+//     }
+//     if(input%3 === 0 )
+//     {
+//         return "Fizz";
+//     }
+//     if(input%5 === 0)
+//     {
+//         return "Buzz";
+//     }
+//     return input;
+// }
 
+//
+
+function checkspeed(speed)
+{
+    let speedlimit = 70;
+    let kmPerPoint = 5;
+    if(speed < speedlimit + kmPerPoint)
+    {
+        console.log("Ok");
+    }
+    else if(speed>speedlimit)
+    {
+        let n=speed-speedlimit;
+        let p= Math.floor(n/kmPerPoint);
+        if(p>=12)
+        {
+            console.log("License Suspend");
+        }
+        else{
+            console.log("Points:" + p);
+        }
+    }
 }
+checkspeed(100);
+
