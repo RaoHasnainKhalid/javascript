@@ -255,26 +255,42 @@
 
 //
 
-function checkspeed(speed)
+// function checkspeed(speed)
+// {
+//     let speedlimit = 70;
+//     let kmPerPoint = 5;
+//     if(speed < speedlimit + kmPerPoint)
+//     {
+//         console.log("Ok");
+//     }
+//     else if(speed>speedlimit)
+//     {
+//         let n=speed-speedlimit;
+//         let p= Math.floor(n/kmPerPoint);
+//         if(p>=12)
+//         {
+//             console.log("License Suspend");
+//         }
+//         else{
+//             console.log("Points:" + p);
+//         }
+//     }
+// }
+// checkspeed(100);
+
+// Even and Odd
+evenOdd(100)
+function evenOdd(limit)
 {
-    let speedlimit = 70;
-    let kmPerPoint = 5;
-    if(speed < speedlimit + kmPerPoint)
+    for(let i=0; i<=limit; i++)
+    {   
+    if(i%2==0)
     {
-        console.log("Ok");
+        console.log(i + " Even");
     }
-    else if(speed>speedlimit)
-    {
-        let n=speed-speedlimit;
-        let p= Math.floor(n/kmPerPoint);
-        if(p>=12)
-        {
-            console.log("License Suspend");
-        }
-        else{
-            console.log("Points:" + p);
-        }
+    // else
+    // {
+    //     console.log(i + " Odd");
+    // }
     }
 }
-checkspeed(100);
-
