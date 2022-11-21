@@ -202,15 +202,28 @@
 // }
 
 // Continue
-let x = 0;
-while(x<=10)
-{
-    if(x == 2)
-    {
-        x++;
-        continue;
-    }
-    console.log(x);
-    x++;
-}
+// let x = 0;
+// while(x<=10)
+// {
+//     if(x == 2)
+//     {
+//         x++;
+//         continue;
+//     }
+//     console.log(x);
+//     x++;
+// }
 
+// let a = 5;
+// let b = 7;
+// if(a>b)
+// console.log(a);
+// else
+// console.log(b);
+
+//Max Number
+let fun = max (5,7)
+console.log(fun);
+function max(a,b){
+    return (a>b) ? a : b;
+}
