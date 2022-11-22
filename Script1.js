@@ -279,18 +279,32 @@
 // checkspeed(100);
 
 // Even and Odd
-evenOdd(100)
-function evenOdd(limit)
+// evenOdd(100)
+// function evenOdd(limit)
+// {
+//     for(let i=0; i<=limit; i++)
+//     {   
+//     if(i%2==0)
+//     {
+//         console.log(i + " Even");
+//     }
+//     else
+//     {
+//         console.log(i + " Odd");
+//     }
+//     }
+// }
+
+//Turthy value
+let array = [0,null,undefined,'',NaN,2,4,6,8,10]
+console.log(countTurthy(array));
+function countTurthy(array)
 {
-    for(let i=0; i<=limit; i++)
-    {   
-    if(i%2==0)
+    let count=0;
+    for(let value of array)
     {
-        console.log(i + " Even");
+        if(value)
+        count++;
     }
-    // else
-    // {
-    //     console.log(i + " Odd");
-    // }
-    }
+    return count;
 }
