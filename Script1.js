@@ -296,15 +296,43 @@
 // }
 
 //Turthy value
-let array = [0,null,undefined,'',NaN,2,4,6,8,10]
-console.log(countTurthy(array));
-function countTurthy(array)
+// let array = [0,null,undefined,'',NaN,2,4,6,8,10]
+// console.log(countTurthy(array));
+// function countTurthy(arr)
+// {
+//     let count=0;
+//     for(let value of arr)
+//     {
+//         if(value)
+//         count++;
+//     }
+//     return count;
+// }
+
+// string Finder
+const Car={
+    Company:"Mazda",
+    Model: 2022,
+    Colour: "Red",
+    Number:1234
+};
+const Car1={
+    Company:"Honda",
+    Model: 2022,
+    Colour: "Red",
+    Number: 57
+};
+stringFinder(Car,Car1);
+function stringFinder(c,d) //c==car   c==car1
 {
-    let count=0;
-    for(let value of array)
-    {
-        if(value)
-        count++;
+    for (const key in c) {
+        if (typeof c[key]=='string') {
+            console.log(key +" : "+ c[key]);
+        }
     }
-    return count;
+    for (const key in d) {
+        if (typeof d[key]=='string') {
+            console.log(key +" : "+ d[key]);
+        }
+    }
 }
