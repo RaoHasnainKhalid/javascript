@@ -338,16 +338,41 @@
 // }
 
 //Sum of Multiple of 3 and 5
-console.log(sum(20));
-function sum(s)
+// console.log(sum(20));
+// function sum(s)
+// {
+//     let sum1=0;
+//     for(i=0; i<=s; i++)
+//     {
+//         if(i%3==0 || i%5==0)
+//         {
+//             sum1= sum1+i;
+//         }
+//     }
+//     return sum1;
+// }
+
+//Calculate Grade
+
+let marks=[90,90,90]
+console.log(calculateGrade(marks)); 
+function calculateGrade(m)
 {
-    let sum1=0;
-    for(i=0; i<=s; i++)
-    {
-        if(i%3==0 || i%5==0)
-        {
-            sum1= sum1+i;
-        }
+    let avg=averageCalculator(m);
+    if(avg<60) return("F");
+    if(avg<70) return("D");
+    if(avg<80) return("C");
+    if(avg<90) return("B");
+    if(avg<=100) return("A");
+}
+function averageCalculator(mk){
+    let sum=0;
+    for (const index of mk) {
+        // console.log(index);
+        sum = sum+index;
+        // console.log(sum);
     }
-    return sum1;
+    let avg = sum/mk.length;
+    return avg;
+    // console.log(avg);
 }
