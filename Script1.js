@@ -310,29 +310,44 @@
 // }
 
 // string Finder
-const Car={
-    Company:"Mazda",
-    Model: 2022,
-    Colour: "Red",
-    Number:1234
-};
-const Car1={
-    Company:"Honda",
-    Model: 2022,
-    Colour: "Red",
-    Number: 57
-};
-stringFinder(Car,Car1);
-function stringFinder(c,d) //c==car   c==car1
+// const Car={
+//     Company:"Mazda",
+//     Model: 2022,
+//     Colour: "Red",
+//     Number:1234
+// };
+// const Car1={
+//     Company:"Honda",
+//     Model: 2022,
+//     Colour: "Red",
+//     Number: 57
+// };
+// stringFinder(Car,Car1);
+// function stringFinder(c,d) //c==car   c==car1
+// {
+//     for (const key in c) {
+//         if (typeof c[key]=='string') {
+//             console.log(key +" : "+ c[key]);
+//         }
+//     }
+//     for (const key in d) {
+//         if (typeof d[key]=='string') {
+//             console.log(key +" : "+ d[key]);
+//         }
+//     }
+// }
+
+//Sum of Multiple of 3 and 5
+console.log(sum(20));
+function sum(s)
 {
-    for (const key in c) {
-        if (typeof c[key]=='string') {
-            console.log(key +" : "+ c[key]);
+    let sum1=0;
+    for(i=0; i<=s; i++)
+    {
+        if(i%3==0 || i%5==0)
+        {
+            sum1= sum1+i;
         }
     }
-    for (const key in d) {
-        if (typeof d[key]=='string') {
-            console.log(key +" : "+ d[key]);
-        }
-    }
+    return sum1;
 }
