@@ -354,25 +354,38 @@
 
 //Calculate Grade
 
-let marks=[90,90,90]
-console.log(calculateGrade(marks)); 
-function calculateGrade(m)
+// let marks=[90,90,90]
+// console.log(calculateGrade(marks)); 
+// function calculateGrade(m)
+// {
+//     let avg=averageCalculator(m);
+//     if(avg<60) return("F");
+//     if(avg<70) return("D");
+//     if(avg<80) return("C");
+//     if(avg<90) return("B");
+//     if(avg<=100) return("A");
+// }
+// function averageCalculator(mk){
+//     let sum=0;
+//     for (const index of mk) {
+//         // console.log(index);
+//         sum = sum+index;
+//         // console.log(sum);
+//     }
+//     let avg = sum/mk.length;
+//     return avg;
+//     // console.log(avg);
+// }
+stars(10)
+function stars(rows)
 {
-    let avg=averageCalculator(m);
-    if(avg<60) return("F");
-    if(avg<70) return("D");
-    if(avg<80) return("C");
-    if(avg<90) return("B");
-    if(avg<=100) return("A");
-}
-function averageCalculator(mk){
-    let sum=0;
-    for (const index of mk) {
-        // console.log(index);
-        sum = sum+index;
-        // console.log(sum);
+    for(let i=0; i<rows; i++)
+    {
+        let a=' ';
+        for(let j=0; j<=i; j++)
+        {
+            a = a +'*';
+        }
+        console.log(a);
     }
-    let avg = sum/mk.length;
-    return avg;
-    // console.log(avg);
 }
