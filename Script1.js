@@ -376,16 +376,38 @@
 //     return avg;
 //     // console.log(avg);
 // }
-stars(10)
-function stars(rows)
+// stars(10)
+// function stars(rows)
+// {
+//     for(let i=0; i<rows; i++)
+//     {
+//         let a=' ';
+//         for(let j=0; j<=i; j++)
+//         {
+//             a = a +'*';
+//         }
+//         console.log(a);
+//     }
+// }
+
+// Prime Number Finder
+primeNumber(50);
+function primeNumber(limit)
 {
-    for(let i=0; i<rows; i++)
+    for(let i=2; i<limit; i++)
     {
-        let a=' ';
-        for(let j=0; j<=i; j++)
+        let a=0;
+        for(let j=2; j<=i; j++)
         {
-            a = a +'*';
+            if(i%j==0)
+            {
+                a++;
+            }
         }
-        console.log(a);
+        if(a==1)
+        {
+            console.log(i);
+        }
+        a=0;
     }
 }
