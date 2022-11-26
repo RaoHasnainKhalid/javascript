@@ -391,23 +391,64 @@
 // }
 
 // Prime Number Finder
-primeNumber(50);
-function primeNumber(limit)
-{
-    for(let i=2; i<limit; i++)
-    {
-        let a=0;
-        for(let j=2; j<=i; j++)
-        {
-            if(i%j==0)
-            {
-                a++;
-            }
-        }
-        if(a==1)
-        {
-            console.log(i);
-        }
-        a=0;
-    }
-}
+// primeNumber(50);
+// function primeNumber(limit)
+// {
+//     for(let i=2; i<limit; i++)
+//     {
+//         let a=0;
+//         for(let j=2; j<=i; j++)
+//         {
+//             if(i%j==0)
+//             {
+//                 a++;
+//             }
+//         }
+//         if(a==1)
+//         {
+//             console.log(i);
+//         }
+//         a=0;
+//     }
+// }
+
+//Object
+//  let square={
+//     length:4,
+//     sq: function()
+//     {
+//         console.log(this.length*4);
+//     }
+//  };
+//  square.sq()
+
+// Factory Function
+
+// function sq(l){
+//     return {
+//             length:l,
+//             sq: function()
+//             {
+//                 console.log(this.length*4);
+//             }
+//          };
+// }
+// let a = sq(5);
+// let b = sq(9);
+// a.sq();
+// b.sq();
+
+//Constructor Function
+// function SquareObject(l,h){
+//           this.length=l;
+//           this.height=h;
+//             this.sq=function()
+//             {
+//                 console.log(this.length*4);
+//                 console.log(this.height*12);
+//             }
+// }
+// let a = new SquareObject(8,0)
+// let b = new SquareObject(0,5)
+// a.sq();
+// b.sq();
