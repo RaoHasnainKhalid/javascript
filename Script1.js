@@ -454,19 +454,47 @@
 // b.sq();
 
 //Object Function
+//  let square={
+//     length:4,
+//     sq: function()
+//     {
+//         console.log(this.length*4);
+//     }
+//  };
+//  for (const key in square) {
+//     console.log(key, square[key]);
+//  }
+//  for (const iterator of Object.keys(square)) {
+//     console.log(iterator,square[iterator]);
+//  }
+// for (const key of Object.entries(square)) {
+//     console.log(key);
+// }
+
+// Cloning Object
  let square={
     length:4,
+    width:2,
     sq: function()
     {
         console.log(this.length*4);
     }
  };
+// // Cloning Object With For In Loop
+ let another = {};
  for (const key in square) {
-    console.log(key, square[key]);
+     if (key=="width"){
+        continue;
+     }
+    another[key]=square[key]
  }
- for (const iterator of Object.keys(square)) {
-    console.log(iterator,square[iterator]);
- }
-for (const key of Object.entries(square)) {
-    console.log(key);
-}
+ console.log(another);
+
+// By Object.assign Method
+let another1 = Object.assign({},square)
+console.log(another1);
+
+// Spraed Oprator
+
+let another2 = {...square}
+console.log(another2);
