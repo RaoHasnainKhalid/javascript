@@ -452,3 +452,21 @@
 // let b = new SquareObject(0,5)
 // a.sq();
 // b.sq();
+
+//Object Function
+ let square={
+    length:4,
+    sq: function()
+    {
+        console.log(this.length*4);
+    }
+ };
+ for (const key in square) {
+    console.log(key, square[key]);
+ }
+ for (const iterator of Object.keys(square)) {
+    console.log(iterator,square[iterator]);
+ }
+for (const key of Object.entries(square)) {
+    console.log(key);
+}
